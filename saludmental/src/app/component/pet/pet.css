@@ -1,0 +1,63 @@
+.pet-card{
+
+  width:350px;
+
+  background:white;
+
+  padding:2rem;
+
+  border-radius:25px;
+
+  text-align:center;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+.pet-image{
+
+  width:200px;
+
+  image-rendering:pixelated;
+
+}
+
+.message{
+  color:#666;
+  margin-bottom:1rem;
+}
+
+.stats{
+  margin-bottom:1rem;
+}
+
+.buttons{
+
+  display:flex;
+  gap:1rem;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+}
+
+button{
+
+  border:none;
+
+  background:#6366f1;
+
+  color:white;
+
+  padding:.8rem 1rem;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+}
+
+button:hover{
+  background:#4f46e5;
+}
