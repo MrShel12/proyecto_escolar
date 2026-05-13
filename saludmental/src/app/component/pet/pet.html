@@ -1,1 +1,40 @@
-<p>pet works!</p>
+<div class="pet-card">
+
+  <img
+    src="assets/shimeji.gif"
+    class="pet-image"
+  >
+
+  <h2>
+    Tu compañero virtual 🌸
+  </h2>
+
+  <p class="message">
+    {{ message }}
+  </p>
+
+  <div class="stats">
+
+    <p>🍎 Hambre: {{ hunger }}</p>
+    <p>😊 Felicidad: {{ happiness }}</p>
+    <p>⚡ Energía: {{ energy }}</p>
+
+  </div>
+
+  <div class="buttons">
+
+    <button (click)="feedPet()">
+      Alimentar
+    </button>
+
+    <button (click)="petPet()">
+      Acariciar
+    </button>
+
+    <button (click)="sleepPet()">
+      Dormir
+    </button>
+
+  </div>
+
+</div>
