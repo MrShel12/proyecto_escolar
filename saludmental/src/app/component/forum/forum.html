@@ -1,1 +1,38 @@
-<p>forum works!</p>
+<div class="forum-container">
+
+  <div class="post-form">
+    <h2>Comparte tus sentimientos 💭</h2>
+    
+    <textarea 
+      [(ngModel)]="newPost" 
+      placeholder="¿Qué estás pensando?"
+      rows="3">
+    </textarea>
+    
+    <button (click)="publishPost()">
+      Publicar
+    </button>
+  </div>
+
+  <div class="posts">
+    <div class="post" *ngFor="let post of posts">
+      
+      <div class="post-header">
+        <strong>{{ post.username }}</strong>
+      </div>
+      
+      <p class="post-message">
+        {{ post.message }}
+      </p>
+      
+      <button 
+        class="like-btn"
+        [class.liked]="post.liked"
+        (click)="toggleLike(post)">
+        ❤️ {{ post.likes }}
+      </button>
+
+    </div>
+  </div>
+
+</div>
